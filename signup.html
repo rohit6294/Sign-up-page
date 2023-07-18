@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(41, 40, 40);
+        }
+        .sub>h1{
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+        }
+        .sub{
+            border-radius: 4px;
+            width: 250px;
+            box-shadow:0 0 20px rgba(96, 96, 96, 0.516);
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            
+            padding: 20px;
+            gap: 10px;
+
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            
+            font-weight: lighter;
+
+        }
+        .form>label{
+            margin-top: 10px;
+            
+            
+           
+        }
+        .form>button{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: aliceblue;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            font-size: small;
+            font-weight: lighter;
+            padding: 4px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub">
+            <h1>
+                Signup
+            </h1>
+            <div class="form">
+                <label for="name">Name:</label>
+                <input type="text" class="name">
+                <label for="Batch">Batch:</label>
+                <select id="batch" name="batch" required>
+                    <option value="sigma1">Sigma 2.0</option>
+                    <option value="sigma2">Sigma 3.0</option>
+                </select>
+                <label for="age">Age:</label>
+                <input type="number" class="age">
+                <label for="email">Email:</label>
+                <input type="email" name="" class="email">
+                <label for="pas">Password:</label>
+                <input type="password" class="pas">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
